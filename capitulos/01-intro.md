@@ -1,44 +1,44 @@
-# Introducción
+# Introducciï¿½n
 
-Ruby es un lenguaje de programación de uso general, que ejecuta en múltiples plataformas. Es un lenguaje
-interpretado, lo que posibilita que sea dinámico: incluso podemos tener programas que se modifican a sí
-mismos en ejecución. Tiene muchas características en común con otros lenguajes tipo scripting, como Perl y
-Python. Ruby tiene palabras claves en inglés, lo cual lo hace parecer a un Pascal moderno. Es orientado
-objetos y se nota la influencia de Smalltalk en su diseño interno. El lenguaje Ruby fue creado por
-Yukihiro Matsumoto (conocido en el ambiente como Matz). Su primera versión fue liberada en 1995. El mismo
-reconoce en sus presentaciones que los lenguajes que influyeron en el diseño de Ruby fueron Smalltalk, Lisp
-y Perl. También se menciona como influencias a Eiffel y Ada.
+Ruby es un lenguaje de programaciï¿½n de uso general, que ejecuta en mï¿½ltiples plataformas. Es un lenguaje
+interpretado, lo que posibilita que sea dinï¿½mico: incluso podemos tener programas que se modifican a sï¿½
+mismos en ejecuciï¿½n. Tiene muchas caracterï¿½sticas en comï¿½n con otros lenguajes tipo scripting, como Perl y
+Python. Ruby tiene palabras claves en inglï¿½s, lo cual lo hace parecer a un Pascal moderno. Es orientado
+objetos y se nota la influencia de Smalltalk en su diseï¿½o interno. El lenguaje Ruby fue creado por
+Yukihiro Matsumoto (conocido en el ambiente como Matz). Su primera versiï¿½n fue liberada en 1995. El mismo
+reconoce en sus presentaciones que los lenguajes que influyeron en el diseï¿½o de Ruby fueron Smalltalk, Lisp
+y Perl. Tambiï¿½n se menciona como influencias a Eiffel y Ada.
 
-Pero como programadores, ¿qué podemos encontrar hoy en Ruby? Bueno, en mi opinión, Ruby tiene características
-que es difícil de encontrar juntas en otros lenguajes:
+Pero como programadores, ï¿½quï¿½ podemos encontrar hoy en Ruby? Bueno, en mi opiniï¿½n, Ruby tiene caracterï¿½sticas
+que es difï¿½cil de encontrar juntas en otros lenguajes:
 
-- Es fácil de aprender
-- Es fácil de escribir
+- Es fï¿½cil de aprender
+- Es fï¿½cil de escribir
 - Es flexible
 - Es poderoso
-- Tiene un gran ecosistema de librerías (gemas) y frameworks
+- Tiene un gran ecosistema de librerï¿½as (gemas) y frameworks
 - Una comunidad activa
 
-Espero que al leer estas páginas, les pueda transmitir por qué aseguro lo de arriba.
+Espero que al leer estas pï¿½ginas, les pueda transmitir por quï¿½ aseguro lo de arriba.
 
-## Instalación
+## Instalaciï¿½n
 
-Ya les conté que Ruby es multiplataforma. Lo que en la práctica se traduce que pueden programar en Windows, Linux
-y Mac OS/X usando Ruby, y con un poco de cuidado, usar el mismo código en todas esas plataformas. Eso lo convierte
+Ya les contï¿½ que Ruby es multiplataforma. Lo que en la prï¿½ctica se traduce que pueden programar en Windows, Linux
+y Mac OS/X usando Ruby, y con un poco de cuidado, usar el mismo cï¿½digo en todas esas plataformas. Eso lo convierte
 en un excelente lenguaje para aprender y practicar: cuando uno escribe un sitio web, por ejemplo, en Windows, luego
 lo puede desplegar en un servidor Linux sin mayor problema (bueno, siempre el diablo puede poner la cola ;-).
 
-Este curso fue escrito usando Ruby 2.0, y espero seguir actualizándolo para cuando aparezcan nuevas versiones. Y fue
-escrito y probado principalmente en máquinas con Windows. Pero todo lo que veremos se puede ejecutar con
-Ruby 1.9.x, y en otras plataformas. Si encuentra algo que no es así, por favor reportarlo en los [issues de GitHub](https://github.com/ajlopez/AprendiendoRuby/issues)
+Este curso fue escrito usando Ruby 2.0, y espero seguir actualizï¿½ndolo para cuando aparezcan nuevas versiones. Y fue
+escrito y probado principalmente en mï¿½quinas con Windows. Pero todo lo que veremos se puede ejecutar con
+Ruby 1.9.x, y en otras plataformas. Si encuentra algo que no es asï¿½, por favor reportarlo en los [issues de GitHub](https://github.com/ajlopez/AprendiendoRuby/issues)
 de este repo.
 
 (A completar)
 
 ## Ruby Interactivo
 
-Con la instalación de Ruby viene un programa `irb` (de Interactive Ruby) que se puede invocar
-desde la línea de comando. Por ejemplo
+Con la instalaciï¿½n de Ruby viene un programa `irb` (de Interactive Ruby) que se puede invocar
+desde la lï¿½nea de comando. Por ejemplo
 
 - Si estamos en **Mac OS X** abrimos `Terminal` e ingresamos `irb` y enter
 - Si estamos en **Linux** abrimos un shell e ingresamos `irb` y enter
@@ -50,7 +50,7 @@ Entonces aparece algo como
 irb(main):001:0>
 ```
 
-Y ahora ¿qué hacemos? Seamos educados, y saludemos al programa. Simplemente ingresamos `"Hola IRB"` y obtenemos
+Y ahora ï¿½quï¿½ hacemos? Seamos educados, y saludemos al programa. Simplemente ingresamos `"Hola IRB"` y obtenemos
 
 ```
 irb(main):001:0> "Hola IRB"
@@ -64,7 +64,7 @@ irb(main):001:0> 1+2
 irb(main):002:0> 3/4
 => 0
 ```
-Vean que en el último caso la división es entera.
+Vean que en el ï¿½ltimo caso la divisiï¿½n es entera.
 
 Y tenemos funciones predefinidas
 ```
@@ -72,15 +72,15 @@ irb(main):001:0> puts "Hola IRB"
 Hola IRB
 => nil
 ```
-Noten que una cosa es el resultado de invocar a la función predefinida `puts`, que termina
-imprimiendo en la consula el mensaje que le pasamos como parámetro, y otra cosa es lo que
-esa función devuelve, el valor `nil`, que podemos por ahora asimilar al `null` de otros lenguajes
+Noten que una cosa es el resultado de invocar a la funciï¿½n predefinida `puts`, que termina
+imprimiendo en la consola el mensaje que le pasamos como parï¿½metro, y otra cosa es lo que
+esa funciï¿½n devuelve, el valor `nil`, que podemos por ahora asimilar al `null` de otros lenguajes
 como C#, Java o JavaScript
 
-> Nota: no hace falta verlo ahora, pero les adelanto que `nil` es un objeto, tiene métodos asociados y hasta una clase, la clase `NilClass`, cosa que no
-asombrará a los programadores Smalltalk
+> Nota: no hace falta verlo ahora, pero les adelanto que `nil` es un objeto, tiene mï¿½todos asociados y hasta una clase, la clase `NilClass`, cosa que no
+asombrarï¿½ a los programadores Smalltalk
 
-Podríamos ingresar varias líneas, y definir funciones, e invocarlas. Vamos a ir viendo estos temas
+Podrï¿½amos ingresar varias lï¿½neas, y definir funciones, e invocarlas. Vamos a ir viendo estos temas
 pero si quieren, pueden probar cosas como:
 
 ```ruby
@@ -98,13 +98,13 @@ irb(main):007:0>
 ```
 
 El `def twice(a)` hasta el `end` es la forma que tenemos en Ruby para definir
-una función. En la línea 6 la invocamos, pasándole como único parámetro a `2`.
+una funciï¿½n. En la lï¿½nea 6 la invocamos, pasï¿½ndole como ï¿½nico parï¿½metro a `2`.
 
 ## Ejecutando Archivos Ruby
 
 (A completar)
 
-## Probando Ruby en Línea
+## Probando Ruby en Lï¿½nea
 
 (A completar)
 
